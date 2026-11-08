@@ -1,0 +1,49 @@
+# --- Data: never commit the Kaggle dataset ---------------------------
+# Ignore everything inside src/data/, but keep the empty folder in the
+# repo (via .gitkeep) so users know exactly where to put the CSVs.
+src/data/*
+!src/data/.gitkeep
+
+# Safety net: block data files and Kaggle downloads anywhere in the repo
+*.csv
+*.zip
+
+# --- OS-generated hidden files ---------------------------------------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Python ----------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- Virtual environments --------------------------------------------
+venv/
+.venv/
+env/
+
+# --- R / RStudio -----------------------------------------------------
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# --- Editors / IDEs --------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# --- Secrets & credentials -------------------------------------------
+.env
+.Renviron
+kaggle.json
+
+# --- Logs ------------------------------------------------------------
+*.log
